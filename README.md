@@ -1,44 +1,71 @@
-# MIT 18.06 Linear Algebra in Python
+# Linear Algebra in Python
 
-I am studying MIT's 18.06 Linear Algebra course and using Python
-to implement the mathematical concepts covered in each lecture.
+A collection of Python implementations of fundamental linear algebra concepts, with a focus on developing the mathematical foundations used in AI and machine learning.
 
-The aim of this project is to strengthen my understanding of linear
-algebra while developing Python skills relevant to machine learning
-and AI.
+Overview
 
-## Current Progress
+This repository documents my practical work with linear algebra using Python. Each file explores a different concept through calculations, examples, and implementations.
 
-### Lecture 1 — Geometry of Linear Equations
-- Ax = b
-- Row and column interpretations
-- Solving systems with Python
+The aim is to combine mathematical understanding with programming and gradually build a portfolio of projects relevant to AI, machine learning, and data science.
 
-### Lecture 2 — Elimination
-- Gaussian elimination
-- Elimination multipliers
-- Upper triangular matrices
+Topics
 
-### Lecture 3 — Matrix Multiplication and Inverses
-- Matrix multiplication
-- Inverse matrices
-- Checking A A^-1 = I
+Current implementations include:
 
-### Lecture 4 — LU Factorization
-- Elimination and LU
-- Constructing L and U
-- Checking A = LU
+* Systems of linear equations
+* Gaussian elimination
+* Row echelon form and reduced row echelon form (RREF)
+* Matrix operations
+* Matrix inverses
+* LU decomposition
+* Vector spaces
+* Linear combinations
+* Column spaces
+* Null spaces
+* Rank and pivot variables
 
-### Lecture 5 — Transposes and Permutations
-- Matrix transpose
-- Permutation matrices
+More topics will be added as the repository develops.
 
-## Tools
+Technologies
 
-- Python
-- NumPy
-- PyCharm
+* Python
+* NumPy
+* SymPy
+* PyCharm
+* Git and GitHub
 
-## Course
+Example
 
-MIT 18.06 Linear Algebra — Gilbert Strang
+Linear algebra problems can be represented and solved programmatically using Python.
+
+import sympy as sp
+A = sp.Matrix([
+    [1, 2, 3],
+    [2, 4, 7],
+    [1, 1, 2]
+])
+rref_matrix, pivot_columns = A.rref()
+print("RREF:")
+print(rref_matrix)
+print("Pivot columns:", pivot_columns)
+
+This allows mathematical concepts such as pivots, rank, column space and null space to be explored computationally.
+
+Why Linear Algebra?
+
+Linear algebra provides much of the mathematical foundation for modern AI and machine learning. Vectors and matrices are used to represent and manipulate data, model transformations, and perform many of the computations underlying machine-learning systems.
+
+Goals
+
+As this repository develops, I plan to:
+
+* Implement more advanced linear algebra concepts
+* Strengthen my understanding through Python
+* Explore applications to AI and machine learning
+* Build small projects demonstrating practical uses of linear algebra
+* Develop a portfolio combining mathematics and programming
+
+Current Status
+
+This repository is actively being developed as I expand my knowledge of linear algebra, Python, AI and machine learning.
+
